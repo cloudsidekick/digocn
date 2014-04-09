@@ -45,7 +45,7 @@ class DigOcnConn():
         self.api_key = api_key
 
 
-    def _make_request(self, noun, action=None, subject=None, params={}):
+    def call(self, noun, action=None, subject=None, params={}):
         """Constructs the Digital Ocean api request to send"""
 
         url = "%s/%s" % (self.base_url, noun)
